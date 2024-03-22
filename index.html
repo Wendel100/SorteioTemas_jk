@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorteio temas</title>
+</head>
+<body>
+    <h1>SORTEIO - TEMAS</h1>
+    <button id="bntsorteio" >iniciar</button>
+    <ul id="sorte">
+    </ul>
+    <script>
+        let bnt = document.getElementById("bntsorteio");
+        let sorte = document.getElementById("sorte");
+        lista = ["pedrinho","mariazinha","uguinho","zezinho"];
+     bnt.addEventListener("click", sorteio_temas);
+     function sorteio_temas(){
+        alert("Sorteando....");
+        // if(lista){
+        //     for(let i=0;i<lista.length;i++){
+        //   alert(`result \n ${lista}`);
+        //     }
+        // }
+     }
+    </script>
+</body>
+
+</html>
