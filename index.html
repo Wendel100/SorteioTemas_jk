@@ -4,26 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sorteio temas</title>
+    <link rel="stylesheet" href="src/css/bootstrap.min.css">
+    <link rel="stylesheet" href="src/css/css.css">
 </head>
-<body>
-    <h1>SORTEIO - TEMAS</h1>
-    <button id="bntsorteio" >iniciar</button>
+<body> 
+    <div class="container text-center">
+        <div class="row align-items-start">
+         
+      </div> <h1>SORTEIO - TEMAS</h1>
+    <div class="container">
     <ul id="sorte">
-    </ul>
+    </ul> 
+    <img src="src/image/mountain-4381041_640.svg" alt="">
+</div> </div>
+        </div>
+        <button id="bntsorteio" type="button" class="btn btn-primary">Sorteio</button>
+
     <script>
         let bnt = document.getElementById("bntsorteio");
         let sorte = document.getElementById("sorte");
-        lista = ["pedrinho","mariazinha","uguinho","zezinho"];
+        let lista =["pedrinho","mariazinha","uguinho","zezinho"];
      bnt.addEventListener("click", sorteio_temas);
+
      function sorteio_temas(){
         alert("Sorteando....");
-        // if(lista){
-        //     for(let i=0;i<lista.length;i++){
-        //   alert(`result \n ${lista}`);
-        //     }
-        // }
+        if(lista){
+            for(let i=0;i<lista.length;i++){
+          alert(`result \n ${lista[i]}`);
+            }
+        }
      }
     </script>
+    <script src="src/js/bootstrap.js"></script>
 </body>
 
 </html>
